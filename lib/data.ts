@@ -35,7 +35,32 @@ export const links = [
 
 export const experiencesData = [] as const
 
-export const projectsData = [] as const
+export const projectsData = [
+	{
+		title: 'Chatify',
+		description:
+			'A full stack chat application. One on one chat and global chat. Notifications. Upload profile pictures.',
+		tags: [
+			'React',
+			'NestJs',
+			'PostgreSQL',
+			'MUI',
+			'Typescript',
+			'SocketIO',
+			'TypeOrm',
+			'AWS S3',
+			'OpenAi gpt-4',
+		],
+		// imageUrl: corpcommentImg,
+	},
+	{
+		title: 'Cover letter creator',
+		description:
+			'Are you tried of creating cover letters? Use AI to help you create tailormade cover letter in just 3 steps',
+		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'MUI', 'OpenAi gpt-4'],
+		// imageUrl: rmtdevImg,
+	},
+] as const
 
 export const skillsData = [
 	'HTML',
