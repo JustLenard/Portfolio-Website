@@ -2,9 +2,8 @@ import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
-import corpcommentImg from '@/public/corpcomment.png'
-import rmtdevImg from '@/public/rmtdev.png'
-import wordanalyticsImg from '@/public/wordanalytics.png'
+import chatApplication from '@/public/chatApplication.png'
+import webScrappingApp from '@/public/webScrappingApp.png'
 
 export const links = [
 	{
@@ -51,7 +50,7 @@ export const projectsData = [
 			'AWS S3',
 			'OpenAi gpt-4',
 		],
-		// imageUrl: corpcommentImg,
+		imageUrl: chatApplication,
 	},
 	{
 		title: 'Cover letter creator',
@@ -59,6 +58,22 @@ export const projectsData = [
 			'Are you tried of creating cover letters? Use AI to help you create tailormade cover letter in just 3 steps',
 		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'MUI', 'OpenAi gpt-4'],
 		// imageUrl: rmtdevImg,
+	},
+	{
+		title: 'Web scrapping App',
+		description:
+			'Choose what data points to scrape and have the data displayed in a beautiful way. Custom-built, sophisticated sentiment analyzer, unraveling the emotional tone of each article — unveiling whether the text conveys a positive, negative, or neutral message.',
+		tags: [
+			'React',
+			'TypeScript',
+			'NodeJs',
+			'Puppeteer',
+			'Cheerio scrapper',
+			'Tailwind',
+			'Express',
+			'Custom sentiment analyzer',
+		],
+		imageUrl: webScrappingApp,
 	},
 ] as const
 
