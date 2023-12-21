@@ -4,6 +4,7 @@ import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
 import chatApplication from '@/public/chatApplication.png'
 import webScrappingApp from '@/public/webScrappingApp.png'
+import { ProjectData } from './types'
 
 export const links = [
 	{
@@ -32,37 +33,64 @@ export const links = [
 	},
 ] as const
 
-export const experiencesData = [] as const
+export const experiencesData = [
+	{
+		title: 'Self thougth developer',
+		location: 'The Odin Project',
+		description: 'Self thought',
+		icon: React.createElement(LuGraduationCap),
+		date: '2021 - 2022',
+	},
+	{
+		title: 'Full Stack Developer',
+		location: 'Tara Interactive',
+		description:
+			'I got hired as a front-end developer but quite quickly transitioned to full stack. I worked 1.5 years here',
+		icon: React.createElement(CgWorkAlt),
+		date: '2022 - 2023',
+	},
+	{
+		title: 'React / React native developer',
+		location: 'RoyalRoad',
+		description: 'Contributed to the development of the RoaylRoad mobile application.',
+		icon: React.createElement(FaReact),
+		date: '2023 - present',
+	},
+]
 
-export const projectsData = [
+export const projectsData: ProjectData[] = [
 	{
 		title: 'Chatify',
 		description:
-			'A full stack chat application. One on one chat and global chat. Notifications. Upload profile pictures.',
+			'A full-stack chat application with the following features: one-on-one and global chat, notifications, and the ability to upload profile pictures to AWS.',
 		tags: [
+			'Typescript',
 			'React',
 			'NestJs',
-			'PostgreSQL',
 			'MUI',
-			'Typescript',
-			'SocketIO',
+			'PostgreSQL',
 			'TypeOrm',
+			'Socket.io',
 			'AWS S3',
-			'OpenAi gpt-4',
+			'gpt-4 API',
 		],
 		imageUrl: chatApplication,
+		github: 'https://github.com/JustLenard/webSocketApp',
+		live: 'chatify-app.up.railway.app',
 	},
 	{
-		title: 'Cover letter creator',
+		title: 'AI cover letter creator',
 		description:
-			'Are you tried of creating cover letters? Use AI to help you create tailormade cover letter in just 3 steps',
+			'Are you tired of creating cover letters? Use AI (GPT-4) to help you create a job-specific, tailor-made cover letter in just 3 easy steps.',
 		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'MUI', 'OpenAi gpt-4'],
-		// imageUrl: rmtdevImg,
+		imageUrl: chatApplication,
+		github: 'https://github.com/JustLenard/CoverLetterCreator',
+		live: '',
 	},
 	{
 		title: 'Web scrapping App',
 		description:
-			'Choose what data points to scrape and have the data displayed in a beautiful way. Custom-built, sophisticated sentiment analyzer, unraveling the emotional tone of each article — unveiling whether the text conveys a positive, negative, or neutral message.',
+			'Scrape and visualize data points from articles, and evaluate the sentiment of the articles.',
 		tags: [
 			'React',
 			'TypeScript',
@@ -74,6 +102,8 @@ export const projectsData = [
 			'Custom sentiment analyzer',
 		],
 		imageUrl: webScrappingApp,
+		github: 'https://github.com/JustLenard/WebScrappingApi',
+		live: '',
 	},
 ] as const
 
@@ -92,5 +122,6 @@ export const skillsData = [
 	'Express',
 	'PostgreSQL',
 	'Python',
+	'AWS',
 	'Web Scraping',
 ] as const
