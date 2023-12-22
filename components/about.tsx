@@ -17,7 +17,14 @@ export default function About() {
 			transition={{ delay: 0.175 }}
 			id="about"
 		>
-			<SectionHeading>About me</SectionHeading>I am a Full stack dev
+			<SectionHeading>About me</SectionHeading>
+			<p className="mb-3">
+				Self-taught developer with 3 years of coding experience, embodying autonomy, a
+				proactive can-do attitude, and strong problem solving skills. I specialize in
+				implementing best practices and ensuring meticulous attention to detail in
+				development tasks. Nice to meet you.
+			</p>
+			<p>I mostly work with React, Nextjs, NestJs and PostreSQL</p>
 		</motion.section>
 	)
 }
