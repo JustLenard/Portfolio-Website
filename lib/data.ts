@@ -106,7 +106,7 @@ export const projectsData: ProjectData[] = [
 		github: 'https://github.com/JustLenard/CoverLetterCreator',
 		live: 'https://ai-cover-letter-creator.up.railway.app',
 	},
-] as const
+]
 
 export const skillsData = [
 	'HTML',
