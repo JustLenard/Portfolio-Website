@@ -4,10 +4,20 @@ import { useRef } from 'react'
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { FaGithub } from 'react-icons/fa'
+import ProjectButton from './ProjectButton'
+import { CgBrowser } from 'react-icons/cg'
 
 type ProjectProps = (typeof projectsData)[number]
 
-export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Project({
+	title,
+	description,
+	tags,
+	imageUrl,
+	github,
+	live,
+}: ProjectProps) {
 	const ref = useRef<HTMLDivElement>(null)
 	const { scrollYProgress } = useScroll({
 		target: ref,
@@ -41,6 +51,20 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
 							</li>
 						))}
 					</ul>
+					<div className="absolute inset-0 bg-slate-600 opacity-0 group-hover:opacity-80 transition-all duration-700 ">
+						<div className="flex items-center h-[100%] sm:max-w-[50%] justify-center gap-8 group-even:ml-auto  ">
+							<ProjectButton link={github}>
+								<FaGithub />
+								GitHub
+							</ProjectButton>
+							{live && (
+								<ProjectButton link={live}>
+									<CgBrowser />
+									View Live
+								</ProjectButton>
+							)}
+						</div>
+					</div>
 				</div>
 
 				<Image
@@ -60,6 +84,12 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
 
         group-even:right-[initial] group-even:-left-40"
 				/>
+				{/* <Image
+					src={imageUrl}
+					alt="Project I worked on"
+					quality={100}
+					className="absolute hidden sm:block top-8 -right-40  rounded-t-lg shadow-2xl"
+				/> */}
 			</section>
 		</motion.div>
 	)

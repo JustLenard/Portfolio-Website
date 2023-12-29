@@ -9,5 +9,5 @@ export type ProjectData = {
 	tags: string[]
 	imageUrl: StaticImageData
 	github: string
-	live: string
+	live?: string
 }

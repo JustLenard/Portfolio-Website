@@ -4,6 +4,8 @@ import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
 import chatApplication from '@/public/chatApplication.png'
 import webScrappingApp from '@/public/webScrappingApp.png'
+import coverLetterCreator from '@/public/coverLetterCreator.png'
+
 import { ProjectData } from './types'
 
 export const links = [
@@ -62,7 +64,7 @@ export const projectsData: ProjectData[] = [
 	{
 		title: 'Chatify',
 		description:
-			'A full-stack chat application with the following features: one-on-one and global chat, notifications, and the ability to upload profile pictures to AWS.',
+			'A full-stack chat application with the following features: one-on-one and global chat, notifications, and the ability to upload profile pictures to AWS S3.',
 		tags: [
 			'Typescript',
 			'React',
@@ -76,16 +78,7 @@ export const projectsData: ProjectData[] = [
 		],
 		imageUrl: chatApplication,
 		github: 'https://github.com/JustLenard/webSocketApp',
-		live: 'chatify-app.up.railway.app',
-	},
-	{
-		title: 'AI cover letter creator',
-		description:
-			'Are you tired of creating cover letters? Use AI (GPT-4) to help you create a job-specific, tailor-made cover letter in just 3 easy steps.',
-		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'MUI', 'OpenAi gpt-4'],
-		imageUrl: chatApplication,
-		github: 'https://github.com/JustLenard/CoverLetterCreator',
-		live: '',
+		live: 'https://chatify-app.up.railway.app',
 	},
 	{
 		title: 'Web scrapping App',
@@ -103,7 +96,15 @@ export const projectsData: ProjectData[] = [
 		],
 		imageUrl: webScrappingApp,
 		github: 'https://github.com/JustLenard/WebScrappingApi',
-		live: '',
+	},
+	{
+		title: 'AI cover letter creator',
+		description:
+			'Are you tired of creating cover letters? Use AI (GPT-4) to help you create a job-specific, tailor-made cover letter in just 3 easy steps.',
+		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'MUI', 'OpenAi gpt-4'],
+		imageUrl: coverLetterCreator,
+		github: 'https://github.com/JustLenard/CoverLetterCreator',
+		live: 'https://ai-cover-letter-creator.up.railway.app',
 	},
 ] as const
 
