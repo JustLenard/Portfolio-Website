@@ -22,6 +22,7 @@ html.dark {
 	content: '|';
 	-webkit-animation: blink 1.1s infinite step-start;
 	animation: blink 1.1s infinite step-start;
+	font-size: larger;
 }
 
 @keyframes blink {
