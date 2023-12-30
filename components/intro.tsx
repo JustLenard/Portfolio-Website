@@ -9,6 +9,7 @@ import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
 import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/active-section-context'
+import portrait from '@/public/01685-3636284269.png'
 
 export default function Intro() {
 	const { ref } = useSectionInView('Home', 0.5)
@@ -25,7 +26,14 @@ export default function Intro() {
 					className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl flex-1"
 					initial={{ opacity: 0, y: 100 }}
 					animate={{ opacity: 1, y: 0 }}
-				></motion.h1>
+				>
+					I'm a <span className="font-bold">full-stack developer</span> with{' '}
+					<span className="font-bold">3 years</span> of experience. I enjoy building{' '}
+					<span className="italic">sites & apps</span> and solving problems. My focus is{' '}
+					<span className="underline">React (Next.js)</span>
+					{' and '}
+					<span className="underline">NodeJs (NestJs)</span>.
+				</motion.h1>
 
 				<div className="flex items-center justify-center flex-1">
 					<div className="relative">
@@ -37,15 +45,15 @@ export default function Intro() {
 								duration: 0.2,
 							}}
 						>
-							{/* <Image
-								src="mate"
-								alt="Ricardo portrait"
-								width="192"
-								height="192"
+							<Image
+								src={portrait}
+								alt="Vitalie portrait"
+								width="512"
+								height="512"
 								quality="95"
 								priority={true}
-								className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-							/> */}
+								className=" object-covers hadow-xl"
+							/>
 						</motion.div>
 
 						<motion.span
