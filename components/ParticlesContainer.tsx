@@ -1,11 +1,16 @@
 'use client'
 
+import { useTheme } from '@/context/theme-context'
 import React, { useCallback } from 'react'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import { Engine } from 'tsparticles-engine'
 
 export const ParticlesContainer = () => {
+	const { theme } = useTheme()
+
+	console.log('This is theme', theme)
+
 	// this customizes the component tsParticles installation
 	const customInit = useCallback(async (engine: Engine) => {
 		// this adds the bundle to tsParticles
@@ -50,10 +55,10 @@ export const ParticlesContainer = () => {
 				},
 				particles: {
 					color: {
-						value: '#324dc7',
+						value: theme === 'dark' ? '#a1afe9' : '#6e112d',
 					},
 					links: {
-						color: '#93d6f5',
+						color: theme === 'dark' ? '#93d6f5' : '#d32ba1',
 						distance: 150,
 						enable: true,
 						opacity: 0.5,
@@ -75,16 +80,16 @@ export const ParticlesContainer = () => {
 					number: {
 						density: {
 							enable: true,
-							area: 800,
+							area: 1000,
 						},
 						value: 80,
 					},
 					opacity: {
 						value: 0.25,
 					},
-					shape: {
-						type: 'circle',
-					},
+					// shape: {
+					// 	type: 'circle',
+					// },
 					size: {
 						value: {
 							min: 1,

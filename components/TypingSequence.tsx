@@ -87,7 +87,7 @@ const TypingSequence = () => {
 	}, [length1, length2])
 
 	return (
-		<div className="flex justify-start items-center text-4xl font-bold mb-8 specialfont h-9">
+		<div className="flex justify-start items-center text-xl sm:text-4xl font-bold mb-8 specialfont h-9">
 			<h1 ref={ref1} className="caret"></h1>
 			<h1 ref={ref2}></h1>
 		</div>
