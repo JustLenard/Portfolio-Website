@@ -96,6 +96,15 @@ export const projectsData: ProjectData[] = [
 		live: 'https://chatify-app.up.railway.app',
 	},
 	{
+		title: 'AI cover letter creator',
+		description:
+			'Are you tired of creating cover letters? Use AI (GPT-4) to help you create a job-specific, tailor-made cover letter in just 3 easy steps.',
+		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'MUI', 'OpenAi gpt-4'],
+		imageUrl: coverLetterCreator,
+		github: 'https://github.com/JustLenard/CoverLetterCreator',
+		live: 'https://ai-cover-letter-creator.up.railway.app',
+	},
+	{
 		title: 'Web scrapping App',
 		description:
 			'Scrape and visualize data points from articles, and evaluate the sentiment of the articles.',
@@ -111,15 +120,6 @@ export const projectsData: ProjectData[] = [
 		],
 		imageUrl: webScrappingApp,
 		github: 'https://github.com/JustLenard/WebScrappingApi',
-	},
-	{
-		title: 'AI cover letter creator',
-		description:
-			'Are you tired of creating cover letters? Use AI (GPT-4) to help you create a job-specific, tailor-made cover letter in just 3 easy steps.',
-		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'MUI', 'OpenAi gpt-4'],
-		imageUrl: coverLetterCreator,
-		github: 'https://github.com/JustLenard/CoverLetterCreator',
-		live: 'https://ai-cover-letter-creator.up.railway.app',
 	},
 ]
 
