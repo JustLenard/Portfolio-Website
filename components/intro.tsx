@@ -10,6 +10,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/active-section-context'
 import portrait from '@/public/01685-3636284269.png'
+import ParticlesContainer from './ParticlesContainer'
 
 export default function Intro() {
 	const { ref } = useSectionInView('Home', 0.5)
@@ -45,11 +46,13 @@ export default function Intro() {
 								duration: 0.2,
 							}}
 						>
+							<ParticlesContainer />
+
 							<Image
 								src={portrait}
 								alt="Vitalie portrait"
-								width="512"
-								height="512"
+								width="112"
+								height="112"
 								quality="95"
 								priority={true}
 								className=" object-covers hadow-xl"

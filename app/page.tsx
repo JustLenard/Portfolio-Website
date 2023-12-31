@@ -1,3 +1,4 @@
+import ParticlesContainer from '@/components/ParticlesContainer'
 import TypingSequence from '@/components/TypingSequence'
 import About from '@/components/about'
 import Contact from '@/components/contact'
@@ -10,10 +11,13 @@ import Skills from '@/components/skills'
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center px-4">
-			<TypingSequence />
-			<Intro />
-			<SectionDivider />
-			<About />
+			<div className="flex flex-col items-center px-4 relative">
+				<ParticlesContainer />
+				<TypingSequence />
+				<Intro />
+				<SectionDivider />
+				<About />
+			</div>
 			<Projects />
 			<Skills />
 			<Experience />
