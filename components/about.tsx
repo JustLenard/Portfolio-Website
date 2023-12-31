@@ -24,7 +24,7 @@ export default function About() {
 				implementing best practices and ensuring meticulous attention to detail in
 				development tasks. Nice to meet you.
 			</p>
-			<p>I mostly work with React, Nextjs, NestJs and PostreSQL</p>
+			<p>I mostly work with TypeScript, React, Nextjs, NestJs and PostreSQL</p>
 		</motion.section>
 	)
 }

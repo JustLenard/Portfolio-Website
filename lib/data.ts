@@ -1,12 +1,27 @@
+import chatApplication from '@/public/chatApplication.png'
+import coverLetterCreator from '@/public/coverLetterCreator.png'
+import webScrappingApp from '@/public/webScrappingApp.png'
 import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
-import { FaReact } from 'react-icons/fa'
+import { FaAws, FaGithub, FaHtml5, FaReact } from 'react-icons/fa'
+import { FaPython } from 'react-icons/fa6'
+import { IoLogoCss3 } from 'react-icons/io'
+import { IoLogoDocker, IoLogoJavascript, IoLogoNodejs } from 'react-icons/io5'
 import { LuGraduationCap } from 'react-icons/lu'
-import chatApplication from '@/public/chatApplication.png'
-import webScrappingApp from '@/public/webScrappingApp.png'
-import coverLetterCreator from '@/public/coverLetterCreator.png'
-
-import { ProjectData } from './types'
+import {
+	SiAntdesign,
+	SiExpress,
+	SiJest,
+	SiMui,
+	SiNestjs,
+	SiPostgresql,
+	SiRedux,
+	SiSelenium,
+	SiTailwindcss,
+	SiTypescript,
+} from 'react-icons/si'
+import { TbBrandNextjs, TbBrandSocketIo } from 'react-icons/tb'
+import { ProjectData, Skill } from './types'
 
 export const links = [
 	{
@@ -108,21 +123,92 @@ export const projectsData: ProjectData[] = [
 	},
 ]
 
-export const skillsData = [
-	'HTML',
-	'CSS',
-	'JavaScript',
-	'TypeScript',
-	'React',
-	'Next.js',
-	'Node.js',
-	'Git',
-	'Tailwind',
-	'TypeOrm',
-	'Redux',
-	'Express',
-	'PostgreSQL',
-	'Python',
-	'AWS',
-	'Web Scraping',
-] as const
+export const skillsData: Skill[] = [
+	{
+		name: 'JavaScript',
+		icon: IoLogoJavascript,
+	},
+	{
+		name: 'TypeScript',
+		icon: SiTypescript,
+	},
+	{
+		name: 'React',
+		icon: FaReact,
+	},
+	{
+		name: 'Next.js',
+		icon: TbBrandNextjs,
+	},
+	{
+		name: 'Redux',
+		icon: SiRedux,
+	},
+	{
+		name: 'Node.js',
+		icon: IoLogoNodejs,
+	},
+	{
+		name: 'Express',
+		icon: SiExpress,
+	},
+	{
+		name: 'NestJs',
+		icon: SiNestjs,
+	},
+	{
+		name: 'HTML',
+		icon: FaHtml5,
+	},
+	{
+		name: 'CSS',
+		icon: IoLogoCss3,
+	},
+	{
+		name: 'Tailwind',
+		icon: SiTailwindcss,
+	},
+	{
+		name: 'MUI',
+		icon: SiMui,
+	},
+	{
+		name: 'AntD',
+		icon: SiAntdesign,
+	},
+	{
+		name: 'Git',
+		icon: FaGithub,
+	},
+	{
+		name: 'PostgreSQL',
+		icon: SiPostgresql,
+	},
+	{
+		name: 'TypeOrm',
+	},
+	{
+		name: 'Python',
+		icon: FaPython,
+	},
+	{
+		name: 'Docker',
+		icon: IoLogoDocker,
+	},
+	{
+		name: 'AWS',
+		icon: FaAws,
+	},
+	{
+		name: 'Web Scraping',
+		icon: SiSelenium,
+	},
+	{
+		name: 'Web Sockets',
+		icon: TbBrandSocketIo,
+	},
+	{
+		name: 'Unit testing',
+		icon: SiJest,
+	},
+]
