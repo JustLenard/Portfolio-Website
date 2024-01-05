@@ -20,12 +20,15 @@ export default function About() {
 		>
 			<SectionHeading>About me</SectionHeading>
 			<p className="mb-3">
-				Self-taught developer with 3 years of coding experience, embodying autonomy, a
-				proactive can-do attitude, and strong problem solving skills. I specialize in
-				implementing best practices and ensuring meticulous attention to detail in
-				development tasks. Nice to meet you.
+				Hey there! I am a proactive problem solver with a can-do attitude and strong problem
+				solving skills. I specialize in implementing best practices and ensuring meticulous
+				attention to detail in development tasks.
 			</p>
-			<p>I mostly work with TypeScript, React, Nextjs, NestJs and PostreSQL</p>
+			<p>
+				Outside work, I usually like spending my time reading, playing video games or
+				watching some youtube.
+			</p>
+			<p>Nice to meet you! Feel free to contact me.</p>
 		</motion.section>
 	)
 }
