@@ -1,15 +1,14 @@
 'use client'
 
-import Image from 'next/image'
-import React from 'react'
+import { useActiveSectionContext } from '@/context/active-section-context'
+import { useSectionInView } from '@/lib/hooks'
+import portrait from '@/public/01685-3636284269.png'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
-import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
-import { useSectionInView } from '@/lib/hooks'
-import { useActiveSectionContext } from '@/context/active-section-context'
-import portrait from '@/public/01685-3636284269.png'
+import { HiDownload } from 'react-icons/hi'
 import ParticlesContainer from './ParticlesContainer'
 
 export default function Intro() {
