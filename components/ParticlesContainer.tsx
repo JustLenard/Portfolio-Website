@@ -21,7 +21,7 @@ export const ParticlesContainer = () => {
 
 	return (
 		<Particles
-			className="w-[100vw] h-full absolute z-0"
+			className="w-full h-full absolute z-9 border-red"
 			id="tsparticles"
 			options={{
 				fullScreen: { enable: false },

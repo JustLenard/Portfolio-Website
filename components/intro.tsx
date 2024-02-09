@@ -45,16 +45,14 @@ export default function Intro() {
 								duration: 0.2,
 							}}
 						>
-							<ParticlesContainer />
-
 							<Image
 								src={portrait}
 								alt="Vitalie portrait"
 								width="112"
 								height="112"
 								quality="95"
-								priority={true}
-								className=" object-covers hadow-xl"
+								// priority={true}
+								// className="object-fill shadow-xl"
 							/>
 						</motion.div>
 
