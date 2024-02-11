@@ -11,7 +11,7 @@ import Skills from '@/components/skills'
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center px-4">
-			<div className="w-[100vw]">
+			<div className="w-full">
 				<div className="flex flex-col items-center px-4 relative ">
 					<ParticlesContainer />
 					<TypingSequence />
